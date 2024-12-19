@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apology from Kyutie to ACX</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar {
+            background-color: #1a1a1a;
+            width: 250px;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 50px;
+            text-align: center;
+        }
+
+        .sidebar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 15px;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #cc0000;
+        }
+
+        .container {
+            margin-left: 260px;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #cc0000;
+        }
+
+        .drawer-section {
+            margin-top: 40px;
+        }
+
+        .drawer-button {
+            background-color: #cc0000;
+            color: white;
+            padding: 15px;
+            margin: 10px;
+            text-align: left;
+            width: 100%;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .drawer-button:hover {
+            background-color: #990000;
+        }
+
+        .drawer-content {
+            background-color: #1a1a1a;
+            padding: 20px;
+            margin-top: 10px;
+            display: none;
+            border-radius: 5px;
+        }
+
+        .playlist-container {
+            margin-top: 30px;
+        }
+
+        .playlist-header {
+            background-color: #cc0000;
+            color: white;
+            padding: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .playlist {
+            margin-top: 20px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .playlist-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background-color: #1a1a1a;
+            margin: 10px 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .playlist-item:hover {
+            background-color: #333;
+        }
+
+        .playlist-item span {
+            margin-left: 20px;
+            color: white;
+            font-size: 16px;
+        }
+
+        .playlist-item a {
+            color: #cc0000;
+            text-decoration: none;
+        }
+
+        .playlist-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="#apology">Apology</a></li>
+            <li><a href="#letters">Letters</a></li>
+            <li><a href="#heart">Heart</a></li>
+            <li><a href="#playlist">Playlist</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Header Section -->
+        <header id="apology">
+            <h1>ACX</h1>
+            <p class="intro">Read this when you miss me. I know words alone cannot make you pleased, but I hope these gestures speak volumes about how much I care about you.</p>
+        </header>
+
+        <!-- Apology Message -->
+        <section class="message">
+            <h2>Apology to You</h2>
+            <p>Love,</p>
+            <p>I'm truly sorry for the mistakes I've made, and for the times I let you down. Please understand that every moment without you weighs heavily on me. I can only hope that you will find it in your heart to forgive me. I promise to work harder and be better for us.</p>
+            <p>With all my love,</p>
+            <p>Kyutie❤️</p>
+        </section>
+
+        <!-- Letters Section with Multiple Drawers -->
+        <section id="letters" class="drawer-section">
+            <h2>Letters to Read When You Miss Me</h2>
+            <div class="drawer-container">
+                <!-- 20 Letters with HTML -->
+                <button class="drawer-button" onclick="toggleDrawer(1)">Letter 1: When I Think of You</button>
+                <div class="drawer-content" id="drawer1">
+                    <p>When I think of you, I remember the warmth of your smile, the light in your eyes, and the way you made me feel like I could conquer the world. I regret that I allowed anything to come between us. Please know that I am committed to making things right. My love for you is unwavering, and I will always cherish the moments we’ve had together. I miss you.</p>
+                </div>
+
+                <button class="drawer-button" onclick="toggleDrawer(2)">Letter 2: When I Wish I Could Undo the Past</button>
+                <div class="drawer-content" id="drawer2">
+                    <p>There are things I regret and wish I could change. I know my actions hurt you, and I can't take back the mistakes I made. But what I can do is promise you that I will always strive to be a better person and partner for you. Please believe that I am learning from the past and working to build a future that you deserve.</p>
+                </div>
+
+                <button class="drawer-button" onclick="toggleDrawer(3)">Letter 3: When I Can't Wait to Hold You Again</button>
+                <div class="drawer-content" id="drawer3">
+                    <p>The time apart has only made me realize how deeply I care for you. I long to hold you, to feel your presence beside me, and to remind you how much you mean to me. I am sorry for the times I took your love for granted, and I promise to cherish every moment we share going forward.</p>
+                </div>
+
+                <button class="drawer-button" onclick="toggleDrawer(4)">Letter 4: When I Miss Your Laughter</button>
+                <div class="drawer-content" id="drawer4">
+                    <p>Your laughter is one of the most beautiful sounds I’ve ever heard. It brings me joy and peace in ways I can’t explain. I miss hearing it, and I can’t wait until we can laugh together again. I promise to do everything in my power to bring you happiness, and I’ll never take those moments for granted again.</p>
+                </div>
+
+                <button class="drawer-button" onclick="toggleDrawer(5)">Letter 5: When I Long for Your Presence</button>
+                <div class="drawer-content" id="drawer5">
+                    <p>Every day without you feels incomplete. Your presence completes me in ways I never realized before. I miss your touch, your voice, and just being near you. Please know that I am here, waiting, and hoping to be close to you again soon.</p>
+                </div>
+
+                <button class="drawer-button" onclick="toggleDrawer(6)">Letter 6: When I Think of Our Future Together</button>
+                <div class="drawer-content" id="drawer6">
+                    <p>When I think about the future, all I see is us, hand in hand, building a life full of love, adventure, and happiness. I can’t wait to make those dreams a reality with you by my side. You are my everything, and I will spend the rest of my life proving it to you.</p>
+                </div>
+
+                <button class="drawer-button" onclick="toggleDrawer(7)">Letter 7: When I Apologize for My Mistakes</button>
+                <div class="drawer-content" id="drawer7">
+                    <p>I know I’ve hurt you, and for that, I am deeply sorry. My actions were thoughtless, and I regret every moment that caused you pain. Please forgive me, and allow me to make it right. You deserve nothing but love and respect, and I promise to always give you that from now on.</p>
+                </div>
+
+                <button class="drawer-button" onclick="toggleDrawer(8)">Letter 8: When I Need Your Forgiveness</button>
+                <div class="drawer-content" id="drawer8">
+                    <p>I am asking for your forgiveness, not because I deserve it, but because I want to become the person you deserve. Please find it in your heart to forgive me, and let’s move forward together, stronger than before. You mean the world to me, and I’ll do anything to make things right.</p>
+                </div>
+
+                <button class="drawer-button" onclick="toggleDrawer(9)">Letter 9: When I Miss Your Smile</button>
+                <div class="drawer-content" id="drawer9">
+                    <p>Your smile was one of the first things that drew me to you. It lights up any room and warms my heart. Every day without it feels incomplete, and I truly miss that brightness you bring to my life.</p>
+                </div>
+
+                <button class="drawer-button" onclick="toggleDrawer(10)">Letter 10: When I Regret the Times I Was Silent</button>
+                <div class="drawer-content" id="drawer10">
+                    <p>There were times when I should have spoken up, should have shared more of my feelings with you, but I kept quiet. I regret those moments, because I now realize how important it is to be open with the ones we love.</p>
+                </div>
+
+                <button class="drawer-button" onclick="toggleDrawer(11)">Letter 11: When I Realize I Took You for Granted</button>
+                <div class="drawer-content" id="drawer11">
+                    <p>I realize that I took your love for granted. I was blind to how much you truly meant to me. Now, I understand the depth of your heart, and I am sorry for not seeing that sooner. I promise to never take you for granted again.</p>
+                </div>
+
+                <button class="drawer-button" onclick="toggleDrawer(12)">Letter 12: When I Miss Your Touch</button>
+                <div class="drawer-content" id="drawer12">
+                    <p>The way your hand fits in mine is something I miss deeply. I miss your touch, the warmth and comfort it brings. It reminds me that no matter where life takes us, we can always find peace in each other’s presence.</p>
+                </div>
+
+                <button class="drawer-button" onclick="toggleDrawer(13)">Letter 13: When I Feel the Distance Between Us</button>
+                <div class="drawer-content" id="drawer13">
+                    <p>The distance between us feels unbearable at times. The space that separates us isn’t just physical—it’s emotional, too. But please know that no matter how far apart we are, you will always have a piece of my heart.</p>
+                </div>
+
+                <button class="drawer-button" onclick="toggleDrawer(14)">Letter 14: When I Feel Like I Failed You</button>
+                <div class="drawer-content" id="drawer14">
+                    <p> I’ve been reflecting on my actions and how they might have made you feel. I feel like I’ve failed you in many ways, and that is the last thing I wanted to do. Please accept my sincere apology and know that I am working to be better.</p>
+                </div>
+
+                <button class="drawer-button" onclick="toggleDrawer(15)">Letter 15: When I Reflect on Our Journey</button>
+                <div class="drawer-content" id="drawer15">
+                    <p> our journey together has been filled with both highs and lows. I cherish every step of it. Even in the hardest moments, I’ve learned more about myself, and about how to love you better. I’m committed to making sure the rest of our journey is filled with more love than pain.</p>
+                </div>
+
+                <button class="drawer-button" onclick="toggleDrawer(16)">Letter 16:  When I Wish We Had More Time</button>
+                <div class="drawer-content" id="drawer16">
+                    <p>  I often wish we had more time. More time to share, to laugh, to enjoy the small moments that make our lives meaningful. Life is too short, and I regret that I didn’t prioritize our time together. I vow to cherish every moment moving forward.</p>
+                </div>
+
+                <button class="drawer-button" onclick="toggleDrawer(17)">Letter 17:  When I Remember the First Time You Said 'I Love You'</button>
+                <div class="drawer-content" id="drawer17">
+                    <p>   I'll never forget the first time you told me you loved me. It was a moment of clarity, a reminder of how deep our connection truly is. I felt as if time stopped for a moment, and all I could think about was how lucky I am to have you in my life.</p>
+                </div>
+
+                <button class="drawer-button" onclick="toggleDrawer(18)">Letter 18: When I Feel Guilty for My Actions</button>
+                <div class="drawer-content" id="drawer18">
+                    <p>   I feel guilty for the things I’ve done, and I know it’s hurt you. I wish I could take it all back, but what I can do now is make things right. I am here, asking for your forgiveness and showing you that I’ll work hard to be the partner you deserve.</p>
+                </div>
+
+                <button class="drawer-button" onclick="toggleDrawer(19)">Letter 19: When I Dream of Our Future Together</button>
+                <div class="drawer-content" id="drawer19">
+                    <p>    I think about our future together all the time. I picture the moments we'll share, the adventures we'll embark on, and the life we'll build. I know we can overcome anything together, and I’m willing to do whatever it takes to make sure we reach that future.</p>
+                </div>
+                <button class="drawer-button" onclick="toggleDrawer(20)">Letter 20: When I Realize I Am Better Because of You</button>
+                <div class="drawer-content" id="drawer20">
+                    <p>    I’ve realized that I’m a better person because of you. Your influence, your wisdom, and your unwavering love have helped me grow in ways I never imagined. Thank you for helping me see the world in a different light.</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Playlist Section -->
+        <section id="playlist" class="playlist-container">
+            <h2 class="playlist-header">Songs to Soothe Your Soul</h2>
+            <ul class="playlist">
+                <li class="playlist-item"><span>1.</span> <a href="https://www.youtube.com/watch?v=QrA-FttmpUo&list=RDaK5jS5WJeTg&index=18" target="_blank">Song Title 1</a></li>
+                <li class="playlist-item"><span>2.</span> <a href="https://youtu.be/aK5jS5WJeTg?si=qAEsPdc61mT0_nps" target="_blank">Song Title 2</a></li>
+                <li class="playlist-item"><span>3.</span> <a href="https://youtu.be/pKFd12id5oQ?si=FVy0Za40e5g3MH33" target="_blank">Song Title 3</a></li>
+                <li class="playlist-item"><span>4.</span> <a href="https://youtu.be/rScwLoES2bM?si=iE1ymz2pyvegwJyt" target="_blank">Song Title 4</a></li>
+                <li class="playlist-item"><span>5.</span> <a href="https://youtu.be/ww9hZfgC2d8?si=ybPXl9mUwnzgKEVJ" target="_blank">Song Title 5</a></li>
+                <li class="playlist-item"><span>6.</span> <a href="https://youtu.be/6JHu3b-pbh8?si=JyTmhUa3cIa69O53" target="_blank">Song Title 6</a></li>
+                <li class="playlist-item"><span>7.</span> <a href="https://youtu.be/98zHKN-xSHk?si=rpEaRLa_soYoePSs" target="_blank">Song Title 7</a></li>
+                <li class="playlist-item"><span>8.</span> <a href="https://youtu.be/zWWNOowLKP4?si=5ItO5cwR-IF5uH-z" target="_blank">Song Title 8</a></li>
+                <li class="playlist-item"><span>9.</span> <a href="https://youtu.be/AE005nZeF-A?si=YQRQjabd9XknogEZ" target="_blank">Song Title 9</a></li>
+                <li class="playlist-item"><span>10.</span> <a href="https://youtu.be/ty7g7CVD7NI?si=aq-y1qItty_Ll_Zr" target="_blank">Song Title 10</a></li>
+                <li class="playlist-item"><span>11.</span> <a href="https://youtu.be/75-Com9Bo_s?si=C-HnRJ1RlRe3MpJm" target="_blank">Song Title 11</a></li>
+                <li class="playlist-item"><span>12.</span> <a href="https://youtu.be/9zEl-FQLI4A?si=FaUq-4nrFgFOEix-" target="_blank">Song Title 12</a></li>
+                <li class="playlist-item"><span>13.</span> <a href="https://youtu.be/nr2CsEtXxmI?si=5ivI51EWgeZimVdJ" target="_blank">Song Title 13</a></li>
+                <li class="playlist-item"><span>14.</span> <a href="https://youtu.be/j_sG_Juncn8?si=nm3lDTT5KUpHuE3A" target="_blank">Song Title 14</a></li>
+                <li class="playlist-item"><span>15.</span> <a href="https://youtu.be/SctrVF37GAQ?si=xdxt6SbPDpbqTSCi" target="_blank">Song Title 15</a></li>
+                <li class="playlist-item"><span>16.</span> <a href="https://youtu.be/Ip6cw8gfHHI?si=Z83dOrlj7yxNVuP9" target="_blank">Song Title 16</a></li>
+                <li class="playlist-item"><span>17.</span> <a href="https://youtu.be/FTL55q-b5B4?si=LJD0otSVIXBr515O" target="_blank">Song Title 17</a></li>
+                <li class="playlist-item"><span>18.</span> <a href="https://youtu.be/y1cBhJLNNXU?si=oy2hajh2TeK6K07S" target="_blank">Song Title 18</a></li>
+                <li class="playlist-item"><span>19.</span> <a href="https://youtu.be/HxwokFPIguU?si=YCtEr3Wy6c8368Lv" target="_blank">Song Title 19</a></li>
+                <li class="playlist-item"><span>20.</span> <a href="https://youtu.be/DqmxvcVSOsk?si=E1EBZcNsVkaaZTqU" target="_blank">Song Title 20</a></li>
+            </ul>
+        </section>
+
+    </div>
+
+    <script>
+        function toggleDrawer(id) {
+            var content = document.getElementById("drawer" + id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>
